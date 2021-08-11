@@ -1,4 +1,4 @@
 # CalculadoraEstiloiOS
  
 Calculadora do estilo iOS.
-projeto não de uso comercial.
+Projeto não de uso comercial.

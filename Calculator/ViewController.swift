@@ -141,21 +141,6 @@ extension ViewController{
 
 //MARK: Button animation
 extension ViewController{
-    func animateOnPress(button: UIButton){
-        let oldColor = button.backgroundColor
-        let newColor = UIColor.systemGray
-        
-        UIView.animate(withDuration: 0.1) {
-            button.backgroundColor = newColor
-        } completion: { completed in
-            if completed {
-                UIView.animate(withDuration: 0.3) {
-                    button.backgroundColor = oldColor
-                }
-            }
-        }
-    }
-    
     func animateToWhite(button: UIButton?){
         guard let buttonToAnimate = button else{
             return
@@ -165,8 +150,8 @@ extension ViewController{
             return
         }
         
-        UIView.animate(withDuration: 0.3) {
-            buttonToAnimate.backgroundColor = UIColor.white
+        UIView.animate(withDuration: 0.4) {
+            buttonToAnimate.setBackgroundImage(UIImage(named: "whiteButton"), for: .normal)
             buttonToAnimate.tintColor = UIColor.systemOrange
             
             if let prevButton = self.prevSelectedOperatorButton{
@@ -182,22 +167,12 @@ extension ViewController{
             return
         }
         
-        UIView.animate(withDuration: 0.3) {
-            buttonToAnimate.backgroundColor = UIColor.systemOrange
+        UIView.animate(withDuration: 0.4) {
+            buttonToAnimate.setBackgroundImage(UIImage(named: "orangeButton"), for: .normal)
             buttonToAnimate.tintColor = UIColor.white
         }
         
         prevSelectedOperatorButton = nil
-    }
-}
-
-//MARK: Button config
-extension UIButton{
-    
-    open override func awakeFromNib() {
-        super.awakeFromNib()
-        layer.masksToBounds = true
-        //layer.cornerRadius = 0.5 * bounds.size.height
     }
 }
 

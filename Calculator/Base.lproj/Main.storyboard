@@ -4,9 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Image references" minToolsVersion="12.0"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -66,9 +64,9 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2z-f2-eVv">
                                                         <rect key="frame" x="0.0" y="0.0" width="81.333333333333329" height="80.666666666666671"/>
-                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="36"/>
-                                                        <state key="normal" title="C">
+                                                        <color key="tintColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="C" backgroundImage="lightButton">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32"/>
                                                         </state>
@@ -78,11 +76,10 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njv-b2-bcj">
                                                         <rect key="frame" x="96.333333333333343" y="0.0" width="81.333333333333343" height="80.666666666666671"/>
-                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="36"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" image="plus.slash.minus" catalog="system">
-                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" backgroundImage="lightButton">
+                                                            <imageReference key="image" image="plus.slash.minus" catalog="system" renderingMode="template"/>
                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32" weight="medium"/>
                                                         </state>
                                                         <connections>
@@ -91,11 +88,11 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A2U-Zq-eUi">
                                                         <rect key="frame" x="192.66666666666666" y="0.0" width="80.999999999999972" height="80.666666666666671"/>
-                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="36"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" image="percent" catalog="system">
+                                                        <state key="normal" backgroundImage="lightButton">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <imageReference key="image" image="percent" catalog="system" renderingMode="template"/>
                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32" weight="medium"/>
                                                         </state>
                                                         <connections>
@@ -104,10 +101,9 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bx9-hq-M0S">
                                                         <rect key="frame" x="288.66666666666669" y="0.0" width="81.333333333333314" height="80.666666666666671"/>
-                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="36"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal">
+                                                        <state key="normal" backgroundImage="orangeButton">
                                                             <imageReference key="image" image="divide" catalog="system" symbolScale="default"/>
                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32" weight="medium"/>
                                                         </state>
@@ -122,9 +118,8 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLG-ki-9mo">
                                                         <rect key="frame" x="0.0" y="0.0" width="81.333333333333329" height="81"/>
-                                                        <color key="backgroundColor" name="numberPadColor"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="36"/>
-                                                        <state key="normal" title="7">
+                                                        <state key="normal" title="7" backgroundImage="darkButton">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32"/>
                                                         </state>
@@ -134,10 +129,9 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HE6-36-zzT">
                                                         <rect key="frame" x="96.333333333333343" y="0.0" width="81.333333333333343" height="81"/>
-                                                        <color key="backgroundColor" name="numberPadColor"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="36"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" title="8">
+                                                        <state key="normal" title="8" backgroundImage="darkButton">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32" weight="medium"/>
                                                         </state>
@@ -147,10 +141,9 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XlB-0k-7JU">
                                                         <rect key="frame" x="192.66666666666666" y="0.0" width="80.999999999999972" height="81"/>
-                                                        <color key="backgroundColor" name="numberPadColor"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="36"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" title="9">
+                                                        <state key="normal" title="9" backgroundImage="darkButton">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32" weight="medium"/>
                                                         </state>
@@ -160,10 +153,9 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbG-SW-WRG">
                                                         <rect key="frame" x="288.66666666666669" y="0.0" width="81.333333333333314" height="81"/>
-                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="36"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal">
+                                                        <state key="normal" backgroundImage="orangeButton">
                                                             <imageReference key="image" image="multiply" catalog="system" symbolScale="default"/>
                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32" weight="medium"/>
                                                         </state>
@@ -178,9 +170,8 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTR-ut-Abm">
                                                         <rect key="frame" x="0.0" y="0.0" width="81.333333333333329" height="81"/>
-                                                        <color key="backgroundColor" name="numberPadColor"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="36"/>
-                                                        <state key="normal" title="4">
+                                                        <state key="normal" title="4" backgroundImage="darkButton">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32"/>
                                                         </state>
@@ -190,10 +181,9 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEq-jW-hR8">
                                                         <rect key="frame" x="96.333333333333343" y="0.0" width="81.333333333333343" height="81"/>
-                                                        <color key="backgroundColor" name="numberPadColor"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="36"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" title="5">
+                                                        <state key="normal" title="5" backgroundImage="darkButton">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32" weight="medium"/>
                                                         </state>
@@ -203,10 +193,9 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNl-R2-cUT">
                                                         <rect key="frame" x="192.66666666666666" y="0.0" width="80.999999999999972" height="81"/>
-                                                        <color key="backgroundColor" name="numberPadColor"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="36"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" title="6">
+                                                        <state key="normal" title="6" backgroundImage="darkButton">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32" weight="medium"/>
                                                         </state>
@@ -216,10 +205,9 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zcc-J4-zY3">
                                                         <rect key="frame" x="288.66666666666669" y="0.0" width="81.333333333333314" height="81"/>
-                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="36"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal">
+                                                        <state key="normal" backgroundImage="orangeButton">
                                                             <imageReference key="image" image="minus" catalog="system" symbolScale="default"/>
                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32" weight="medium"/>
                                                         </state>
@@ -234,9 +222,8 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XkC-s9-nuz">
                                                         <rect key="frame" x="0.0" y="0.0" width="81.333333333333329" height="81"/>
-                                                        <color key="backgroundColor" name="numberPadColor"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="36"/>
-                                                        <state key="normal" title="1">
+                                                        <state key="normal" title="1" backgroundImage="darkButton">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32"/>
                                                         </state>
@@ -246,10 +233,9 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luX-GF-s7l">
                                                         <rect key="frame" x="96.333333333333343" y="0.0" width="81.333333333333343" height="81"/>
-                                                        <color key="backgroundColor" name="numberPadColor"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="36"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" title="2">
+                                                        <state key="normal" title="2" backgroundImage="darkButton">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32" weight="medium"/>
                                                         </state>
@@ -259,10 +245,9 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dM-bh-j9Z">
                                                         <rect key="frame" x="192.66666666666666" y="0.0" width="80.999999999999972" height="81"/>
-                                                        <color key="backgroundColor" name="numberPadColor"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="36"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" title="3">
+                                                        <state key="normal" title="3" backgroundImage="darkButton">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32" weight="medium"/>
                                                         </state>
@@ -272,10 +257,9 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAn-zW-NiM">
                                                         <rect key="frame" x="288.66666666666669" y="0.0" width="81.333333333333314" height="81"/>
-                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="36"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal">
+                                                        <state key="normal" backgroundImage="orangeButton">
                                                             <imageReference key="image" image="plus" catalog="system" symbolScale="default"/>
                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32" weight="medium"/>
                                                         </state>
@@ -290,10 +274,9 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1PQ-JM-GN8">
                                                         <rect key="frame" x="0.0" y="0.0" width="177.66666666666666" height="81"/>
-                                                        <color key="backgroundColor" name="numberPadColor"/>
                                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="36"/>
                                                         <inset key="titleEdgeInsets" minX="35" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                        <state key="normal" title="0">
+                                                        <state key="normal" title="0" backgroundImage="longDarkButton">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32"/>
                                                         </state>
@@ -306,9 +289,8 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azq-gF-856">
                                                                 <rect key="frame" x="0.0" y="0.0" width="81" height="81"/>
-                                                                <color key="backgroundColor" name="numberPadColor"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="36"/>
-                                                                <state key="normal" title=",">
+                                                                <state key="normal" title="," backgroundImage="darkButton">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32"/>
                                                                 </state>
@@ -318,10 +300,9 @@
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxI-qT-jQm">
                                                                 <rect key="frame" x="96.000000000000028" y="0.0" width="81.333333333333343" height="81"/>
-                                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="36"/>
                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <state key="normal">
+                                                                <state key="normal" backgroundImage="orangeButton">
                                                                     <imageReference key="image" image="equal" catalog="system" symbolScale="default"/>
                                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32" weight="medium"/>
                                                                 </state>
@@ -363,18 +344,16 @@
         </scene>
     </scenes>
     <resources>
+        <image name="darkButton" width="100" height="100"/>
         <image name="divide" catalog="system" width="128" height="103"/>
         <image name="equal" catalog="system" width="128" height="72"/>
+        <image name="lightButton" width="100" height="100"/>
+        <image name="longDarkButton" width="200" height="100"/>
         <image name="minus" catalog="system" width="128" height="24"/>
         <image name="multiply" catalog="system" width="128" height="111"/>
+        <image name="orangeButton" width="100" height="100"/>
         <image name="percent" catalog="system" width="128" height="121"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="plus.slash.minus" catalog="system" width="128" height="115"/>
-        <namedColor name="numberPadColor">
-            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>

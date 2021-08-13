@@ -197,7 +197,7 @@ extension UIButton{
     open override func awakeFromNib() {
         super.awakeFromNib()
         layer.masksToBounds = true
-        layer.cornerRadius = 0.5 * bounds.size.height
+        //layer.cornerRadius = 0.5 * bounds.size.height
     }
 }
 

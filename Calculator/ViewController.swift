@@ -60,7 +60,7 @@ class ViewController: UIViewController, UIInputViewAudioFeedback {
     }
     
     @IBAction func percentPressed(_ sender: UIButton) {
-        calculatorManager.operation = .percent
+        calculatorManager.calculatePercent()
         SystemSound.playClickSound()
     }
     

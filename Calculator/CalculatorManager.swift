@@ -29,7 +29,6 @@ class CalculatorManager {
         case minus
         case multiply
         case divide
-        case percent
         case clear
     }
     
@@ -52,7 +51,7 @@ class CalculatorManager {
     }
     var canAllClear: Bool = false
     
-    private let defaultString: String = "0"
+    private let resetString: String = "0"
     private let maxSize:Int = 9
     private var a: String
     private var b: String
@@ -61,8 +60,8 @@ class CalculatorManager {
     
     init(displayLabel: UILabel) {
         self.displayLabel = displayLabel
-        self.a = defaultString
-        self.b = defaultString
+        self.a = resetString
+        self.b = resetString
     }
     
     func appendNumberKey(_ numberKey: NumberKey){
@@ -102,7 +101,7 @@ class CalculatorManager {
     private func typeOnAAfterResult(){
         if canTypeOnA{
             selectedVar = .a
-            a = defaultString
+            a = resetString
             canTypeOnA = false
         }
     }
@@ -147,8 +146,6 @@ class CalculatorManager {
             valueA = valueA * valueB
         case .divide:
             valueA = valueA / valueB
-        case .percent:
-            valueA = valueA / 100
         default:
             print("Entered Calculate Default")
         }
@@ -160,18 +157,43 @@ class CalculatorManager {
         canTypeOnA = true
     }
     
+    func calculatePercent(){
+        var valueA = a.toDouble()
+        //get the value directly from the display
+        var valueB = displayLabel.text!.toDouble()
+        
+        switch operation{
+        case .minus, .plus:
+            valueB = valueA * (valueB / 100)
+            
+            b  = valueB.format()
+            displayLabel.text = b
+        case .multiply, .divide:
+            valueB = valueB / 100
+            
+            b  = valueB.format()
+            displayLabel.text = b
+        default:
+            //No operation selected
+            valueA = valueA / 100
+            
+            a  = valueA.format()
+            displayLabel.text = a
+        }
+    }
+    
     func allClear(){
-        a = defaultString
-        b = defaultString
+        a = resetString
+        b = resetString
         operation = nil
-        displayLabel.text = defaultString
+        displayLabel.text = resetString
         canTypeOnA = false
     }
     
     func clear(){
         canAllClear = true
-        a = defaultString
-        displayLabel.text = defaultString
+        a = resetString
+        displayLabel.text = resetString
     }
 }
 
